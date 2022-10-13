@@ -27,6 +27,12 @@ const Auth = () => {
         setIsSignup(!isSignup)
         setIsVerified(isVerified)
     }
+    const handleResend = () => {
+        setIsSignup(!isSignup)
+        setIsVerified(!isVerified) 
+        setIsSignup(isSignup)
+        setIsVerified(!isVerified)
+    }
     const handleSignupSubmit = (e) => {
         e.preventDefault()
         setIsSignup(!isSignup)
