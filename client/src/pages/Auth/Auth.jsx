@@ -81,7 +81,7 @@ console.log({name, email, password})
                         <input type="otp" id='otp' name='otp' onChange={(e) => {setOtp(e.target.value)}}/>
                     <button type='submit' className='auth-btn'>Submit</button>
                     <p>didn't get ?</p>
-                    <button type='submit' className='auth-btn'onClick={handleSignupSubmit}>resend otp</button>
+                    <button type='submit' className='auth-btn'onClick={handleResend}>resend otp</button>
                     </label>
         </form>
         </div>
